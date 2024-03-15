@@ -26,21 +26,21 @@ donde Pn(x) = sum desde k=0 hasta n (f'(k) (x0))/(k!) (x-x0)^k
 
 Rn(x) = (f'(n+1)(Epsion(x)))/(n+1)! (x-x0)^(n+1)
 
-![alt text](image.png)
+![alt text](teorema-taylor.png)
 
 Resolver Pn(x) sería resolver un problema numerico
 
+![aproximacion](aproximacion-taylor-2-4.png)
+
+![error de grado 2](error-taylor-2.png)
+
+![error de grado 4](error-taylor-4.png)
+
 Se trata de una aproximación ya que no vamos a hacer n terminos sino una cantidad reducida, sabiendo que cuantos mas usamos, mas aproximado será este al valor matemático.
-
-![alt text](image-1.png)
-
-![alt text](image-2.png)
-
-![alt text](image-3.png)
 
 Podemos ver que cuanto mas grados tiene el polinomio, más nos podemos acercar a la función real y por un entorno un poco más grande.
 
-![alt text](image-4.png)
+![alt text](desarollo-cotas.png)
 
 En este caso, como el teorema dice Epsilon(x) se encuentra en x0 y x entoces si reemplazamos ambos es la funcion de R2 (por ejemplo), podemos hallar un limite inferior (|P2(x)|) y el superior (|x|^3 / 6) (ya que el modulo del seno, esta limitado por 1)
 
@@ -52,7 +52,7 @@ El error no se puede calcular, se puede acotar
 
 El numero A siempre es 1
 
-![alt text](image-5.png)
+![alt text](excel-float.png)
 
 Esto es un tema de los numeros de coma flotant, la computadora al guardarlos no es capaz de representar con tanta exactitud los numeros por ende empieza a hacer redondeos.
 
@@ -64,4 +64,4 @@ La moraleja del punto anterior, el orden de las operaciones IMPORTA ya que cada 
 
 Esto se llama algoritmo, es un método que usamos para resolver problemas matemáticos de forma aproximada, pero calculable por una computadora. Existen mejores y peores por su puesto y ese es desarollo que haremos en esta materia.
 
-<melucallebaut@gmail.com>
+<!-- <melucallebaut@gmail.com> para cambio de curso -->
