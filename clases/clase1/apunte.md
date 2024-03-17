@@ -14,7 +14,7 @@ Las funciones que no se pueden resolver mediante las operaciones normales se den
 
 Sea $f \in C^n [a,b]$ tal que $f^{(n+1)}$ existe en $[a,b)$.
 
-Si $x_0 \in [a,b]$, entonces, $ \forall x_0 \in [a,b]$, $ \exist \xi(x)$ entre $x_0$ y $x$ tal que:
+Si $x_0 \in [a,b]$, entonces, $\forall x_0 \in [a,b]$, $\exist \xi(x)$ entre $x_0$ y $x$ tal que:
 
 $$f(x) = P_n(x) + R_n(x)$$
 
