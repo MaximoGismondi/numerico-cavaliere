@@ -1,12 +1,14 @@
-# Análisis Numérico vs. Análisis Matemático
+# Clase 1
+
+## Análisis Numérico vs. Análisis Matemático
 
 En el análisis matemático, contamos con el concepto de infinito, el cual no es aplicable en el análisis numérico. Esto implica que conceptos como límites, derivadas e integrales no se manejan de la misma manera. En esta materia, desarrollaremos métodos numéricos que nos permitan transformar y abordar problemas matemáticos complejos, facilitando así la búsqueda de soluciones que podrían ser difíciles, costosas o incluso imposibles de calcular mediante métodos analíticos convencionales.
 
-## Funciones Normales
+### Funciones Normales
 
 Las funciones normales se pueden calcular mediante operaciones básicas como suma, resta, multiplicación, división y potenciación.
 
-## Funciones Trascendentes
+### Funciones Trascendentes
 
 Las funciones que no se pueden resolver mediante las operaciones normales se denominan trascendentes. Ejemplos de estas incluyen funciones trigonométricas, logarítmicas, exponenciales y radicales.
 
