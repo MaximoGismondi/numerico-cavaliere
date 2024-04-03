@@ -87,7 +87,7 @@ $ |e_{x_n}| \leq \Delta{x_n} $
 
 ### Podemos aplicar Taylor para aproximar $y(\underline{x})$
 
-$ y(\underline{x}) \approx y(\underline{\tilde{x}}) + \sum_{i=1}^{n} \frac{\partial y}{\partial x_i} e{x_i} $
+$ y(\underline{x}) \approx y(\underline{\tilde{x}}) + \sum_{i=1}^{n} \frac{\partial y}{\partial x_i}|_{\underline{\tilde{x}}} e_{x_i} $
 
 ![alt text](taylor.png)
 
