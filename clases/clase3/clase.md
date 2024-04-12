@@ -24,6 +24,8 @@ $$ |x_n - x| = \epsilon\leq \frac{|b - a|}{2^n} $$
 
 ## Método del punto fijo
 
+![alt text](image.png)
+
 Para aplicar este método, se debe de reescribir la ecuación $f(x) = 0$ como $x = g(x)$. La función $g(x)$ debe de cumplir con las siguientes condiciones:
 
 - **Continua:** $g(x)$ debe de ser continua en el intervalo $[a, b]$.
@@ -42,7 +44,17 @@ El error en la iteración $n$ y el valor $k$ de la condición de Lipschitz está
 COMPLETAR
 <!-- $$ |x_n - x| = \epsilon \leq \frac{k^n}{1 - k} |x_1 - x_0| $$ -->
 
+![alt text](image-3.png)
+
+![alt text](image-4.png)
+
 ## Método de Newton-Raphson
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+![alt text](image-6.png)
 
 La idea de este método es aproximar la función $f(x)$ por una recta tangente en el punto $x_n$. La ecuación de la recta tangente es:
 
@@ -66,4 +78,26 @@ Los pasos del método son los siguientes:
 
 El error del método esta dado por la siguiente fórmula:
 
-$$ |x_n - x| = \epsilon \leq \frac{|f(x_n)|}{|f'(x_n)|} $$
+<!-- $$ |x_n - x| = \epsilon \leq \frac{|f(x_n)|}{|f'(x_n)|} $$ -->
+
+![alt text](image-9.png)
+
+Si la raíz es doble o múltiple, la convergencia pierde su propiedad cuadrática y se convierte en lineal.
+
+## Método de la secante
+
+![alt text](image-10.png)
+
+## Teorema general para acotar el error
+
+<!-- me falto una antes de esta -->
+
+![alt text](image-12.png)
+
+Se demuestra con Taylor
+
+![alt text](image-15.png)
+
+## Sistemas de ecuaciones lineales
+
+![alt text](image-18.png)
