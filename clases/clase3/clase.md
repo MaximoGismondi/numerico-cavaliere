@@ -41,7 +41,7 @@ El método consiste en los siguientes pasos:
 
 El error en la iteración $n$ y el valor $k$ de la condición de Lipschitz están relacionados por la siguiente fórmula:
 
-COMPLETAR
+<!-- COMPLETAR -->
 <!-- $$ |x_n - x| = \epsilon \leq \frac{k^n}{1 - k} |x_1 - x_0| $$ -->
 
 ![alt text](image-3.png)
@@ -86,11 +86,15 @@ Si la raíz es doble o múltiple, la convergencia pierde su propiedad cuadrátic
 
 ## Método de la secante
 
+Evitas las derivadas
+
 ![alt text](image-10.png)
 
-## Teorema general para acotar el error
+## Método regula falsi
 
-<!-- me falto una antes de esta -->
+Similar al método de la bisección, pero se selecciona el punto que se encuentra en la intersección de la recta que une los puntos $a$ y $b$ con el eje $x$. Tiene una convergencia más rápida que el método de la bisección pero requiere más cálculos.
+
+## Teorema general para acotar el error
 
 ![alt text](image-12.png)
 
@@ -98,6 +102,17 @@ Se demuestra con Taylor
 
 ![alt text](image-15.png)
 
-## Sistemas de ecuaciones lineales
+## Comparación de métodos
 
-![alt text](image-18.png)
+Para comparar los métodos se pueden evaluar las siguientes variables:
+
+- **$p$:** orden de convergencia
+- **$\lambda$:** constante asintótica de convergencia
+
+Normalmente se busca que $p$ sea lo más grande posible y $\lambda$ lo más pequeño posible, siendo el más influyente el orden de convergencia.
+
+Newton-Raphson se destaca por los demás métodos por tener un orden de convergencia de 2, a diferencia de los demás métodos que tienen un orden de convergencia de 1 y juegan con la constante $\lambda$.
+
+El método de la secante tiene un orden de convergencia de ~1.618, lo que lo hace más rápido que el método de la bisección y regula falsi pero más lento que Newton-Raphson.
+
+![alt text](image-19.png)
