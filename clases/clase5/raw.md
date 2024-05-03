@@ -64,7 +64,9 @@ Acá wilkinson descubrio como se podía cuantificar el error en sistemas grandes
 
 ### Refinamiento iterativo
 
-Podemos usar un método iterativo para mejorar la solución obtenida por un método directo. La idea es resolver el sistema de ecuaciones lineales con un método directo, y luego usar un método iterativo para mejorar la solución. Para esto guardamos anteriormente la factorización de la matriz A, ya que podemos reutilizar los factores L y U para refinar la solución y reducir el error (sino me equivoco el residuo).
+Podemos usar un método iterativo para mejorar la solución obtenida por un método directo. La idea es resolver el sistema de ecuaciones lineales con un método directo, y luego usar un método iterativo para mejorar la solución. Para esto guardamos anteriormente la factorización de la matriz A, ya que podemos reutilizar los factores L, U y P para refinar la solución y reducir el error.
+
+Estas matrices se utilizan para calcular $\delta^{(0)}$ mediante la solución del sistema $A \cdot \delta^{(0)} = r^{(0)}$, donde $r^{(0)}$ es el residuo de la solución obtenida por el método directo. Ahí resolver el sistema de ecuaciones lineales es más simple gracias a $L$, $U$ y $P$.
 
 ![alt text](image-9.png)
 

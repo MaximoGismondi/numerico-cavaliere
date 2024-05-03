@@ -2,7 +2,7 @@
 
 ![alt text](image-1.png)
 
-## Metodo de Jacovi y
+## Metodo de Jacobi y Gauss Seidel
 
 ![alt text](image-18.png)
 
