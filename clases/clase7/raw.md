@@ -1,4 +1,4 @@
-# Clase 7 - Ajuste e interpolación
+# Clase 7 - Ajuste
 
 Dada una serie de puntos hayados por un experimento, la idea es encontrar una función que se ajuste a esos puntos. La idea es encontrar una función que pase por esos puntos, y que sea lo más simple posible.
 
