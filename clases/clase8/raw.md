@@ -88,4 +88,14 @@ Es obligatorio que si se pide una derivada de orden superior, se debe establecer
 
 ![alt text](image-11.png)
 
+![alt text](image-12.png)
+
 La desventaja de este método es que si se agrega un punto, se debe recalcular todo el polinomio.
+
+Cada uno de los polinomios se calcula de la siguiente forma:
+
+$$ \delta_i(x) = \prod_{j=0, j \neq i}^{n} \frac{x - x_j}{x_i - x_j} $$
+
+Y el polinomio de interpolación es:
+
+$$ p(x) = \sum_{i=0}^{n} f(x_i) \delta_i(x) $$
