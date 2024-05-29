@@ -24,6 +24,8 @@ Cabe aclarar que no toda ecuación con una derivada es una ecuación diferencial
 
 ## Método de Euler
 
+### Explícito
+
 ![alt text](image-4.png)
 
 ![alt text](image-5.png)
@@ -63,3 +65,96 @@ Error en la hoja... la derivada es respecto a $y$ y no a $t$.
 ![alt text](image-12.png)
 
 Esto solo vale para casos en los que $\frac{df}{dy} < 0 $ en otros no existe un punto crítico ya que no se garantiza la convergencia (mi hipotesis).
+
+### Implicito
+
+![alt text](image-13.png)
+
+![alt text](image-14.png)
+
+En este caso, la ecuación de recurrencia es:
+
+$$ u_{n+1} = u_n +  \Delta t f(t_{n+1}, u_{n+1}) $$
+
+Donde
+
+$$t_{n+1} = t_n + \Delta t$$
+
+En este caso la u_{n+1} no siempre se puede despejar de forma analítica, por lo que se debe encontrar con el método explícito.
+
+### Método Predictor-Corrector
+
+![alt text](image-15.png)
+
+Está técnica se llama Predictor-Corrector, ya que se predice el valor de la función en el punto $u_{n+1}$ con el método explcito y luego se trata de corregir iterando una cantidad de veces.
+
+$$ u_{n+1}^{(0)} = u_n + \Delta t f(t_n, u_n) $$
+$$ u_{n+1}^{(k+1)} = u_n + \Delta t f(t_n + \Delta t, u_{n+1}^{(k)}) $$
+
+## Método del punto medio
+
+Es como el método de Euler pero en vez de calcular la pendiente en el punto de inicio, lo calculamos en el punto medio entre el $t_n$ y el $t_{n+1}$. Es decir, se calcula la pendiente en el punto $t_n + \frac{\Delta t}{2}$.
+
+![alt text](image-16.png)
+
+La ecucación de recurrencia es:
+
+$$ u_{n+1} = u_n + \Delta t f(t_n + \frac{\Delta t}{2}, u_n + \frac{\Delta t}{2} f(t_n, u_n)) $$
+
+Esto computacionalmente es el doble de pesado que el método de Euler, pero en términos del error este disminuye de forma cuadrática.
+
+## Euler vs Punto medio
+
+![alt text](image-19.png)
+![alt text](image-20.png)
+
+## Método de Runge-Kutta
+
+![alt text](image-21.png)
+
+![alt text](image-22.png)
+
+Este método es la versión mejorada del método del punto medio, ya que se calculan más pendientes intermedias y se promedian para obtener una mejor aproximación. Esto no tiene un límite en la cantidad de pendientes intermedias que se pueden calcular, es decir el método se puede generalizar a cualquier orden.
+
+### Orden 2
+
+$$ k_1 = f(t_n, u_n) $$
+$$ k_2 = f(t_n + \frac{\Delta t}{2}, u_n + \frac{\Delta t}{2} k_1) $$
+$$ u_{n+1} = u_n + \Delta t k_2 $$
+
+### Orden 4
+
+$$ k_1 = f(t_n, u_n) $$
+$$ k_2 = f(t_n + \frac{\Delta t}{2}, u_n + \frac{\Delta t}{2} k_1) $$
+$$ k_3 = f(t_n + \frac{\Delta t}{2}, u_n + \frac{\Delta t}{2} k_2) $$
+$$ k_4 = f(t_n + \Delta t, u_n + \Delta t k_3) $$
+$$ u_{n+1} = u_n + \frac{\Delta t}{6} (k_1 + 2k_2 + 2k_3 + k_4) $$
+
+### Orden n
+
+$$ k_i = f(t_n + c_i \Delta t, u_n + \Delta t \sum_{j=1}^{i-1} a_{ij} k_j) $$
+$$ u_{n+1} = u_n + \Delta t \sum_{i=1}^{n} b_i k_i $$
+
+Donde los coeficientes $a_{ij}$, $b_i$ y $c_i$ son los coeficientes de la tabla de Butcher.
+
+[Documento que econtre en internet (PAG 6)](https://riull.ull.es/xmlui/bitstream/handle/915/20683/Metodos%20de%20tipo%20Runge-Kutta%20y%20linealmente%20implicitos%20para%20la%20resolucion%20de%20EDOs..pdf?sequence=1&isAllowed=y)
+
+![alt text](image-28.png)
+
+## Condiciones de estabilidad
+
+![alt text](image-23.png)
+
+## Ecuaciones diferenciales de orden superior
+
+![alt text](image-24.png)
+
+Podemos armar un sistema de ecuaiones diferenciales de primer orden a partir de una ecuación diferencial de orden superior.
+
+Es mas largo y tedioso, pero se puede hacer usando los métodos de primer orden. Siempre y cuando vayamos actualizando los valores para cada orden de derivada.
+
+## Ejemplo con Range-Kutta y orden 2
+
+![alt text](image-26.png)
+
+![Otra foto con correcciones](image-27.png)
