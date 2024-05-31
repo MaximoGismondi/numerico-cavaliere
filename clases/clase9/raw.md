@@ -141,9 +141,26 @@ Donde los coeficientes $a_{ij}$, $b_i$ y $c_i$ son los coeficientes de la tabla 
 
 ![alt text](image-28.png)
 
-## Condiciones de estabilidad
+## Estabilidad
+
+### Condiciones de estabilidad
 
 ![alt text](image-23.png)
+
+### Demostración
+
+Evaluo la consistencia
+
+![alt text](image-29.png)
+
+![alt text](image-30.png)
+
+### Teorema de LAX
+
+Si un método es estable y consistente, se demuestra entonces la convergencia del método
+
+Se explica mejor en el Libro de BURDEN
+Usamos el error local de truncamiento
 
 ## Ecuaciones diferenciales de orden superior
 
@@ -158,3 +175,9 @@ Es mas largo y tedioso, pero se puede hacer usando los métodos de primer orden.
 ![alt text](image-26.png)
 
 ![Otra foto con correcciones](image-27.png)
+
+## Extrapolación de Richardson
+
+![alt text](image-31.png)
+
+La idea usar varios \Delta t con un método de orden bajo y luego armar un sistema de ecuaciones para construir un método de orden superior.
