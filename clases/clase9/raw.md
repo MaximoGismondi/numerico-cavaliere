@@ -180,4 +180,4 @@ Es mas largo y tedioso, pero se puede hacer usando los métodos de primer orden.
 
 ![alt text](image-31.png)
 
-La idea usar varios \Delta t con un método de orden bajo y luego armar un sistema de ecuaciones para construir un método de orden superior.
+La idea usar varios $\Delta$t con un método de orden bajo y luego armar un sistema de ecuaciones para construir un método de orden superior.
